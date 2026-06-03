@@ -11,12 +11,7 @@ MODEL_DIR = os.path.join("backend", "models")
 DATA_DIR = os.path.join("backend", "database")
 os.makedirs(MODEL_DIR, exist_ok=True)
 
-def generar_dataset_500():
-    np.random.seed(42)
-    num_registros = 500
-    variedades = ['Arábica', 'Catuaí', 'Geisha', 'Caturra', 'Bourbon', 'Catimor', 'Typica']
-    status_opciones = ['Orgánico', 'Convencional']
-    datos = []
+
 
     for _ in range(num_registros):
         variedad = np.random.choice(variedades)
